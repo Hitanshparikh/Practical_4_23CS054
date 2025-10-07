@@ -1,0 +1,76 @@
+[2025-10-07 19:12:38] Database connection failed: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+[2025-10-07 19:13:08] Database connection failed: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+[2025-10-07 19:13:29] Database connection failed: SQLSTATE[HY000] [1049] Unknown database 'library_management'
+[2025-10-07 19:13:35] Database connection failed: SQLSTATE[HY000] [1049] Unknown database 'library_management'
+[2025-10-07 19:14:23] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'expiry_date' SQL: CREATE TABLE IF NOT EXISTS reservations (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                user_id INT NOT NULL,
+                book_id INT NOT NULL,
+                reservation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                expiry_date TIMESTAMP,
+                status ENUM('active', 'fulfilled', 'cancelled', 'expired') DEFAULT 'active',
+                priority INT DEFAULT 1,
+                FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+                FOREIGN KEY (book_id) REFERENCES books(id) ON DELETE CASCADE
+            )
+[2025-10-07 19:14:26] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'expiry_date' SQL: CREATE TABLE IF NOT EXISTS reservations (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                user_id INT NOT NULL,
+                book_id INT NOT NULL,
+                reservation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                expiry_date TIMESTAMP,
+                status ENUM('active', 'fulfilled', 'cancelled', 'expired') DEFAULT 'active',
+                priority INT DEFAULT 1,
+                FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+                FOREIGN KEY (book_id) REFERENCES books(id) ON DELETE CASCADE
+            )
+[2025-10-07 19:58:41] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'expiry_date' SQL: CREATE TABLE IF NOT EXISTS reservations (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                user_id INT NOT NULL,
+                book_id INT NOT NULL,
+                reservation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                expiry_date TIMESTAMP,
+                status ENUM('active', 'fulfilled', 'cancelled', 'expired') DEFAULT 'active',
+                priority INT DEFAULT 1,
+                FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+                FOREIGN KEY (book_id) REFERENCES books(id) ON DELETE CASCADE
+            )
+[2025-10-07 19:58:43] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'expiry_date' SQL: CREATE TABLE IF NOT EXISTS reservations (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                user_id INT NOT NULL,
+                book_id INT NOT NULL,
+                reservation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                expiry_date TIMESTAMP,
+                status ENUM('active', 'fulfilled', 'cancelled', 'expired') DEFAULT 'active',
+                priority INT DEFAULT 1,
+                FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+                FOREIGN KEY (book_id) REFERENCES books(id) ON DELETE CASCADE
+            )
+[2025-10-07 19:58:44] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'expiry_date' SQL: CREATE TABLE IF NOT EXISTS reservations (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                user_id INT NOT NULL,
+                book_id INT NOT NULL,
+                reservation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                expiry_date TIMESTAMP,
+                status ENUM('active', 'fulfilled', 'cancelled', 'expired') DEFAULT 'active',
+                priority INT DEFAULT 1,
+                FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+                FOREIGN KEY (book_id) REFERENCES books(id) ON DELETE CASCADE
+            )
+[2025-10-07 19:58:44] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'expiry_date' SQL: CREATE TABLE IF NOT EXISTS reservations (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                user_id INT NOT NULL,
+                book_id INT NOT NULL,
+                reservation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                expiry_date TIMESTAMP,
+                status ENUM('active', 'fulfilled', 'cancelled', 'expired') DEFAULT 'active',
+                priority INT DEFAULT 1,
+                FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+                FOREIGN KEY (book_id) REFERENCES books(id) ON DELETE CASCADE
+            )
+[2025-10-07 19:58:47] Query failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'library_management.reservations' doesn't exist SQL: SELECT COUNT(*) as count FROM reservations WHERE user_id = ?
+[2025-10-07 19:59:37] Query failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'library_management.activity_logs' doesn't exist SQL: INSERT INTO activity_logs (user_id, action, table_name, record_id, old_values, new_values, ip_address, user_agent) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+[2025-10-07 20:00:18] Query failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'library_management.activity_logs' doesn't exist SQL: INSERT INTO activity_logs (user_id, action, table_name, record_id, old_values, new_values, ip_address, user_agent) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+[2025-10-07 20:00:22] Query failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'library_management.activity_logs' doesn't exist SQL: INSERT INTO activity_logs (user_id, action, table_name, record_id, old_values, new_values, ip_address, user_agent) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+[2025-10-07 20:00:37] Query failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'library_management.activity_logs' doesn't exist SQL: INSERT INTO activity_logs (user_id, action, table_name, record_id, old_values, new_values, ip_address, user_agent) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+[2025-10-07 20:00:46] Query failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'library_management.reservations' doesn't exist SQL: SELECT COUNT(*) as count FROM reservations WHERE user_id = ?
